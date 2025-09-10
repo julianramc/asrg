@@ -154,7 +154,7 @@ if not st.session_state.loaded:
         progress_bar.progress(perc_completed + 1)
         
     st.session_state.loaded = True
-    st.experimental_rerun()
+    st.rerun()
 
 
 # --------------------
@@ -244,3 +244,4 @@ with tab4:
 # --- Pie de página ---
 st.markdown("---")
 st.markdown('<p style="text-align: center; color: var(--secondary); font-style: italic;">Hecho con cariño, pensando en cada estrella de tu ser ✨</p>', unsafe_allow_html=True)
+
